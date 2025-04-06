@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Zartusha</title>
+        <link href="https://fonts.googleapis.com/css?family=Space+Mono:regular,italic,700,700italic" rel="stylesheet" />
+        <link rel="icon" href="https://pbs.twimg.com/profile_images/1878301128355450880/KIlIf7sI_400x400.jpg"/>
+        <style>
+            * {
+                box-sizing: border-box;
+            }   
+            body,html {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+              margin: 0;
+              background-color: #111111;
+              color: #ffffff;
+              font-family: 'Space Mono', sans-serif;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              min-height: 100vh;
+              padding: 2rem;
+            }
+            h1 {
+              font-size: 3rem;
+              margin-bottom: 0.5rem;
+            }
+            .bio {
+              font-size: 1.2rem;
+              color: #aaa;
+              margin-bottom: 3rem;
+              text-align: center;
+              max-width: 500px;
+            }
+            .avatar {
+              width: 150px;
+              height: 150px;
+              border-radius: 50%;
+            }
+            .links {
+              display: flex;
+              flex-direction: column;
+              gap: 1.5rem;
+              width: 100%;
+              max-width: 500px;
+            }
+            .link {
+              position: relative;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              flex-direction: row-reverse;
+              padding: 1.2rem;
+              background-color: transparent;
+              text-decoration: none;
+              color: white;
+              border-top: 2px solid #3f3f3f;
+              border-bottom: 2px solid #3f3f3f;
+              width: 100%;
+            }
+            .link::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #1c6ae9;
+                mix-blend-mode: lighten;
+                transform: scaleY(0);
+                transform-origin: left;
+                transition: transform 0.4s;
+                }
+
+            .link:hover::before {
+                transform: scaleY(1);
+            }
+            .link:hover {
+              border-color: #ffffff;
+            }
+            .link svg {
+              width: 35px;
+              height: 35px;
+              margin-right: 0.5rem;
+              fill: white;
+            }
+            .text {
+              font-size: 1.3rem;
+              text-align: left;
+              display: flex;
+              flex-direction: column;
+            }
+          </style>
+    </head>
+    <body>
+        <img class="avatar" src="https://pbs.twimg.com/profile_images/1878301128355450880/KIlIf7sI_400x400.jpg" alt="Avatar" />
+        <h1>Zartusha</h1>
+        <p class="bio">Creating renders in Blender, also I do VRChat assets stuff. Interested in lighting programming. Feel free to connect with me!</p>
+        <div class="links">
+            <a class="link" href="https://twitter.com/zartusha" target="_blank">
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <title>X</title>
+                    <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
+                </svg>
+                <span class="text">X / Twitter</span>
+            </a>
+            <a class="link" href="https://t.me/zartusha" target="_blank">
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <title>Telegram</title>
+                    <path
+                        d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"
+                    />
+                </svg>
+                <span class="text">Telegram</span>
+            </a>
+            <a class="link" href="https://trello.com/b/GCFD6boW/zartusha-renders" target="_blank">
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <title>Trello</title>
+                    <path
+                        d="M21.147 0H2.853A2.86 2.86 0 000 2.853v18.294A2.86 2.86 0 002.853 24h18.294A2.86 2.86 0 0024 21.147V2.853A2.86 2.86 0 0021.147 0zM10.34 17.287a.953.953 0 01-.953.953h-4a.954.954 0 01-.954-.953V5.38a.953.953 0 01.954-.953h4a.954.954 0 01.953.953zm9.233-5.467a.944.944 0 01-.953.947h-4a.947.947 0 01-.953-.947V5.38a.953.953 0 01.953-.953h4a.954.954 0 01.953.953z"
+                    />
+                </svg>
+                <span class="text">Trello Queue</span>
+            </a>
+            <a class="link" href="https://zartusha.gumroad.com" target="_blank">
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <title>Gumroad</title>
+                    <path
+                        d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0Zm-.007 5.12c4.48 0 5.995 3.025 6.064 4.744h-3.239c-.069-.962-.897-2.406-2.896-2.406-2.136 0-3.514 1.857-3.514 4.126 0 2.27 1.378 4.125 3.514 4.125 1.93 0 2.758-1.512 3.103-3.025h-3.103v-1.238h6.509v6.327h-2.855v-3.989c-.207 1.444-1.102 4.264-4.617 4.264-3.516 0-5.584-2.82-5.584-6.326 0-3.645 2.276-6.602 6.618-6.602z"
+                    />
+                </svg>
+                <span class="text">Gumroad</span>
+            </a>
+        </div>
+    </body>
+</html>
