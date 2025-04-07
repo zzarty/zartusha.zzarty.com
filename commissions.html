@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZARTUSHA | COMMISSIONS</title>
+    <link
+      rel="icon"
+      href="https://pbs.twimg.com/profile_images/1878301128355450880/KIlIf7sI_400x400.jpg"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Commissions</h1>
+
+    <div class="tos">
+      <h2>Pricing</h2>
+      <p><strong>Full scene:</strong> €120+</p>
+      <p><strong>Additional character:</strong> €40 per character</p>
+
+      <h2 class="collapsible-header" onclick="toggleTOS()">
+        <span id="tos-arrow">▶</span> Terms of Service
+      </h2>
+      <div id="tos-content" class="collapsible-content">
+        <p>
+          <strong>Payment Terms:</strong><br />
+          I begin work on your commission only after receiving 50% of the total
+          payment. The remaining 50% is due upon completion of the work.
+        </p>
+
+        <p>
+          <strong>Artistic Freedom:</strong><br />
+          I enjoy having artistic freedom in my commissions and generally prefer
+          not to work on highly specific or rigid requests.
+        </p>
+
+        <p>
+          <strong>Usage Rights:</strong><br />
+          The work is intended for non-commercial use only. If you wish to use
+          the artwork for merchandise such as buttons, posters, or other
+          commercial products, this must be discussed and agreed upon in
+          advance.
+        </p>
+
+        <p>
+          <strong>Credit & Social Media Sharing:</strong><br />
+          You must credit me as the artist when displaying the work. I retain
+          the right to post the artwork on my own social media and portfolios,
+          unless otherwise agreed.
+        </p>
+
+        <p>
+          <strong>Private Commissions:</strong><br />
+          I do not accept private commissions by default, but we can discuss it
+          if you have specific requirements.
+        </p>
+
+        <p>
+          <strong>Refund Policy:</strong><br />
+          Refunds will only be issued if I am unable to fulfill the commission
+          due to unforeseen circumstances. In this case, the refund will be
+          issued in full.
+        </p>
+
+        <p>
+          <strong>Revisions:</strong><br />
+          Revisions are included in the cost of the commission but only before
+          the final render is complete. Once the final render is done, revisions
+          will be limited to post-processing adjustments.
+        </p>
+
+        <p>
+          <strong>Right to Decline:</strong><br />
+          I reserve the right to decline any commission for any reason, at my
+          discretion.
+        </p>
+
+        <p>
+          <strong>Contact Information:</strong> Please provide your Discord or
+          Telegram username for communication purposes. Enter it in the form
+          field below.
+        </p>
+      </div>
+    </div>
+
+    <div class="form-container">
+      <h2>Commission Request Form</h2>
+      <form
+        action="https://docs.google.com/forms/d/e/1FAIpQLSdkJWolHmj8m1LOUAemZ2YKOKN4ybXveDzTjlq9WhMgUvmprw/formResponse"
+        method="post"
+      >
+        <div>
+          <label for="username">Your Ds/Tg Username:</label>
+          <input
+            type="text"
+            id="username"
+            name="entry.4332556"
+            placeholder="e.g. @yourhandle"
+            required
+          />
+        </div>
+        <div class="checkbox-group">
+          <input
+            type="checkbox"
+            id="agree"
+            name="entry.570831669"
+            value="I agree to the TOS"
+            required
+          />
+          <label for="agree">I agree to the Terms of Service</label>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <script>
+      function toggleTOS() {
+        const content = document.getElementById("tos-content");
+        const arrow = document.getElementById("tos-arrow");
+        const isOpen = content.classList.contains("open");
+
+        if (isOpen) {
+          content.classList.remove("open");
+          arrow.textContent = "▶";
+        } else {
+          content.classList.add("open");
+          arrow.textContent = "▼";
+        }
+      }
+    </script>
+  </body>
+</html>
