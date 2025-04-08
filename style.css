@@ -230,7 +230,7 @@ button:focus {
   color: #1c6ae9;
 }
 
-@media (max-width: 580px) {
+@media (max-width: 600px) {
   .form-row {
     align-items: flex-start;
     flex-direction: column;
