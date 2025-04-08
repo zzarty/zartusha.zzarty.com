@@ -192,16 +192,17 @@ button:focus {
 }
 
 .collapsible-content {
-  max-height: 0;
+  interpolate-size: allow-keywords;
+  height: 0;
   overflow: hidden;
-  transition: max-height 0.5s ease, opacity 0.3s ease;
+  transition: height 0.5s ease, opacity 0.3s ease;
   opacity: 0;
   width: 100%;
   margin-top: 1rem;
 }
 
 .collapsible-content.open {
-  max-height: fit-content;
+  height: auto;
   opacity: 1;
 }
 
