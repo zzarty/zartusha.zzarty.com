@@ -78,14 +78,6 @@ h1 {
   transition: transform 0.4s;
 }
 
-.link:hover::before {
-  transform: scaleY(1);
-}
-
-.link:hover {
-  border-color: #ffffff;
-}
-
 .link svg {
   width: 35px;
   height: 35px;
@@ -157,6 +149,10 @@ input[type="checkbox"] {
   margin-right: 0.5rem;
 }
 
+input:focus {
+  outline: none;
+}
+
 .checkbox-group {
   display: flex;
   align-items: center;
@@ -186,15 +182,14 @@ button::before {
   mix-blend-mode: lighten;
   transform: scaleY(0);
   transform-origin: left;
-  transition: transform 0.4s ease;
+  transition: 
+  transform 0.4s,
+  opacity 0.3s;
 }
 
-button:hover::before {
+button:active::before {
   transform: scaleY(1);
-}
-
-button:hover {
-  border-color: #ffffff;
+  opacity: 0.75;
 }
 
 button:focus {
@@ -226,8 +221,9 @@ button:focus {
   transition: color 0.2s ease;
 }
 
-.collapsible-header:hover {
+.collapsible-header:active {
   color: #1c6ae9;
+  opacity: 0.75;
 }
 
 @media (max-width: 600px) {
@@ -239,5 +235,28 @@ button:focus {
 
   input[type="text"] {
     width: 100%;
+  }
+}
+
+
+@media (hover: hover) and (pointer: fine) {
+  .link:hover::before {
+    transform: scaleY(1);
+  }
+  
+  .link:hover {
+    border-color: #ffffff;
+  }
+
+  button:hover::before {
+    transform: scaleY(1);
+  }
+  
+  button:hover {
+    border-color: #ffffff;
+  }
+
+  .collapsible-header:hover {
+    color: #1c6ae9;
   }
 }
