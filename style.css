@@ -2,6 +2,8 @@
 
 * {
   box-sizing: border-box;
+
+  --blue: #2083c5;
 }
 
 body,
@@ -152,8 +154,8 @@ button {
   background-color: transparent;
   color: white;
   border: none;
-  border-top: 2px solid #1c6ae9;
-  border-bottom: 2px solid #1c6ae9;
+  border-top: 2px solid var(--blue);
+  border-bottom: 2px solid var(--blue);
   cursor: pointer;
   overflow: hidden;
 }
@@ -166,7 +168,7 @@ button::before, .link::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #1c6ae9;
+  background-color: var(--blue);
   mix-blend-mode: lighten;
   transform: scaleY(0);
   transform-origin: left;
@@ -210,7 +212,7 @@ button:focus {
 }
 
 .collapsible-header:active {
-  color: #1c6ae9;
+  color: var(--blue);
   opacity: 0.75;
 }
 
@@ -245,6 +247,6 @@ button:focus {
   }
 
   .collapsible-header:hover {
-    color: #1c6ae9;
+    color: var(--blue);
   }
 }
