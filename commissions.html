@@ -4,129 +4,152 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ZARTUSHA | COMMISSIONS</title>
-    <link
-      rel="icon"
-      href="https://pbs.twimg.com/profile_images/1878301128355450880/KIlIf7sI_400x400.jpg"
-    />
+    <link rel="icon" href="images/avatar.png" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Commissions</h1>
+    <div class="board-container">
+      <header>
+        <h1>Commissions</h1>
+      </header>
+      <section class="tos">
+        <h2>Pricing</h2>
+        <p><strong>Full scene:</strong> €140+</p>
+        <p><strong>Additional character:</strong> €60 per character</p>
+        <p><strong>Private commission:</strong> +50%</p>
 
-    <div class="tos">
-      <h2>Pricing</h2>
-      <p><strong>Full scene:</strong> €120+</p>
-      <p><strong>Additional character:</strong> €40 per character</p>
+        <h2 class="collapsible-header" onclick="toggleTOS()">
+          <span class="tos-icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path 
+                d="M4 7L10 14L16 7" 
+                stroke="currentColor" 
+                stroke-width="2" 
+                stroke-linecap="round"
+                stroke-linejoin="round" 
+              />
+            </svg>
+          </span>
+          Terms of Service
+        </h2>
+        <div id="tos-content" class="collapsible-content">
+          <p>
+            <strong>Payment Terms:</strong><br />
+            I will begin work on your commission only after receiving full payment upfront.
+          </p>
 
-      <h2 class="collapsible-header" onclick="toggleTOS()">
-        <span id="tos-arrow">▶</span> Terms of Service
-      </h2>
-      <div id="tos-content" class="collapsible-content">
-        <p>
-          <strong>Payment Terms:</strong><br />
-          I begin work on your commission only after receiving 50% of the total
-          payment. The remaining 50% is due upon completion of the work.
-        </p>
+          <p>
+            <strong>Artistic Freedom:</strong><br />
+            I enjoy having artistic freedom in my commissions and generally prefer
+            not to work on highly specific or rigid requests.
+          </p>
 
-        <p>
-          <strong>Artistic Freedom:</strong><br />
-          I enjoy having artistic freedom in my commissions and generally prefer
-          not to work on highly specific or rigid requests.
-        </p>
+          <p>
+            <strong>Usage Rights:</strong><br />
+            The work is intended for non-commercial use only. If you wish to use
+            the artwork for merchandise such as buttons, posters, or other
+            commercial products, this must be discussed and agreed upon in
+            advance.
+          </p>
 
-        <p>
-          <strong>Usage Rights:</strong><br />
-          The work is intended for non-commercial use only. If you wish to use
-          the artwork for merchandise such as buttons, posters, or other
-          commercial products, this must be discussed and agreed upon in
-          advance.
-        </p>
+          <p>
+            <strong>Credit & Social Media Sharing:</strong><br />
+            You must credit me as the artist when displaying the work. I retain
+            the right to post the artwork on my own social media and portfolios,
+            unless otherwise agreed.
+          </p>
 
-        <p>
-          <strong>Credit & Social Media Sharing:</strong><br />
-          You must credit me as the artist when displaying the work. I retain
-          the right to post the artwork on my own social media and portfolios,
-          unless otherwise agreed.
-        </p>
+          <p>
+            <strong>Private Commissions:</strong><br />
+            Private commissions are accepted but incur a 50% price increase over the standard.
+          </p>
 
-        <p>
-          <strong>Private Commissions:</strong><br />
-          I do not accept private commissions by default, but we can discuss it
-          if you have specific requirements.
-        </p>
+          <p>
+            <strong>Refund Policy:</strong><br />
+            Refunds cannot be issued due to my inability to process them because of 
+            country-specific restrictions or circumstances.
+          </p>
 
-        <p>
-          <strong>Refund Policy:</strong><br />
-          Refunds will only be issued if I am unable to fulfill the commission
-          due to unforeseen circumstances. In this case, the refund will be
-          issued in full.
-        </p>
+          <p>
+            <strong>Revisions:</strong><br />
+            Revisions are included in the cost of the commission but only before
+            the final render is complete. Once the final render is done, revisions
+            will be limited to post-processing adjustments.
+          </p>
 
-        <p>
-          <strong>Revisions:</strong><br />
-          Revisions are included in the cost of the commission but only before
-          the final render is complete. Once the final render is done, revisions
-          will be limited to post-processing adjustments.
-        </p>
+          <p>
+            <strong>Deadlines:</strong><br />
+            No deadlines are provided for commissions by default. If you require a 
+            specific deadline, it must be discussed and agreed upon in advance. 
+            Commissions with deadlines will incur an additional fee, to be determined 
+            during the discussion.
+          </p>
 
-        <p>
-          <strong>Right to Decline:</strong><br />
-          I reserve the right to decline any commission for any reason, at my
-          discretion.
-        </p>
+          <p>
+            <strong>Right to Decline:</strong><br />
+            I reserve the right to decline any commission for any reason, at my
+            discretion.
+          </p>
 
-        <p>
-          <strong>Contact Information:</strong> Please provide your Discord or
-          Telegram username for communication purposes. Enter it in the form
-          field below.
-        </p>
-      </div>
-    </div>
-
-    <div class="form-container">
-      <h2>Commission Request Form</h2>
-      <form
-        action="https://docs.google.com/forms/d/e/1FAIpQLSdkJWolHmj8m1LOUAemZ2YKOKN4ybXveDzTjlq9WhMgUvmprw/formResponse"
-        method="post"
-        autocomplete="off"
-      >
-        <div class="form-row">
-          <label for="usertag">Discord/Telegram handle:</label>
-          <input
-            type="text"
-            name="entry.4332556"
-            placeholder="e.g. @yourhandle"
-            autocomplete="off"
-            required
-          />
-        </div class="form-row">
-        <div class="checkbox-group">
-          <input
-            type="checkbox"
-            name="entry.570831669"
-            value="I agree to the TOS"
-            required
-          />
-          <label for="agree">I agree to the Terms of Service</label>
+          <p>
+            <strong>Contact Information:</strong> Please provide your Discord or
+            Telegram username for communication purposes. Enter it in the form
+            field below.
+          </p>
         </div>
-        <button type="submit">Submit</button>
+      </section>
+
+      <form 
+          id="commission-form"
+          action="https://docs.google.com/forms/d/e/1FAIpQLSdkJWolHmj8m1LOUAemZ2YKOKN4ybXveDzTjlq9WhMgUvmprw/formResponse"
+          method="post" 
+          autocomplete="off" 
+          novalidate
+      >
+        <section class="form-container">
+            <h2>Commission Request Form</h2>
+            <div class="form-row">
+              <label for="usertag">Discord/Telegram handle:</label>
+              <input 
+                type="text" 
+                id="usertag" 
+                name="entry.4332556" 
+                placeholder="e.g. @yourhandle" 
+                autocomplete="off"
+                required />
+            </div>
+            <div class="checkbox-group">
+              <input 
+                type="checkbox" 
+                id="tos-agree" 
+                class="checkbox-input" 
+                name="entry.570831669" 
+                value="I agree to the TOS"
+                required 
+              />
+              <label class="checkbox-wrapper" for="tos-agree">
+                <span class="checkbox-icon">
+                  <svg width="12px" height="10px" viewBox="0 0 12 10">
+                    <use href="#check"/>
+                  </svg>
+                </span>
+                <span class="checkbox-text">I agree to the Terms of Service</span>
+              </label>
+            </div>
+          
+        </section>
+        <span class="error" id="error"></span>
+        <button class="link" type="submit">
+          <span class="text">Submit</span>
+        </button>
       </form>
     </div>
 
-    <script>
-      function toggleTOS() {
-        const content = document.getElementById("tos-content");
-        const arrow = document.getElementById("tos-arrow");
-        const isOpen = content.classList.contains("open");
-
-        if (isOpen) {
-          content.classList.remove("open");
-          arrow.textContent = "▶";
-        } else {
-          content.classList.add("open");
-          arrow.textContent = "▼";
-        }
-      }
-    </script>
+    <script src="commissions.js" defer></script>
+    <svg width="0" height="0">
+      <symbol id="check" viewBox="0 0 12 10">
+        <polyline points="1.5 6 4.5 9 10.5 1" />
+      </symbol>
+    </svg>
   </body>
 </html>
